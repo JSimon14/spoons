@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2019_10_02_140754) do
     t.string "name"
     t.integer "spoons"
     t.text "description"
+    t.integer "user_id"
+    t.integer "position"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -27,7 +29,11 @@ ActiveRecord::Schema.define(version: 2019_10_02_140754) do
     t.string "name"
     t.integer "spoons"
     t.text "description"
+    t.datetime "date"
     t.boolean "completed"
+    t.integer "user_id"
+    t.integer "category_id"
+    t.integer "position"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
